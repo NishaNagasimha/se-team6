@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Gallery</title>
+	
+	<!-- Required CSS -->
+	<link href="css/movingboxes.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<link href="css/movingboxes-ie.css" rel="stylesheet" media="screen" />
+	<![endif]-->
+	
+	<!-- Required script -->
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="js/jquery.movingboxes.js"></script>
+
+	<!-- Demo only -->
+	<link href="demo/demo.css" rel="stylesheet">
+
+	<style>
+		/* Dimensions set via css in MovingBoxes version 2.2.2+ */
+		#slider { width: 500px; }
+		#slider li { width: 250px; }
+	</style>
+
+	<script>
+	$(function(){
+
+		$('#slider').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 1,      // start with this panel
+			wrap         : false,  // if true, the panel will infinitely loop
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<h1 class="demo-title"></h1>
+
+
+		<!-- MovingBoxes Slider -->
+		<ul id="slider">
+
+			<li>
+				<img src="images/mit/c_daskalakis.jpg" alt="picture">
+				<h2>C. Daskalakis</h2>
+				<p>Add a short exerpt here... <a href="http://flickr.com/photos/justbcuz/112479862/">more</a></p>
+			</li>
+
+			<li>
+				<img src="images/mit/hiromu_nagahara.jpg" alt="picture">
+				<h2>Hiromu Nagahara</h2>
+				<p>Add a short exerpt here... <a href="http://flickr.com/photos/joshuacraig/2698975899/">more</a> and a whole lot more text goes here, so we can see the height adjust.</p>
+			</li>
+
+			<li>
+				<img src="images/mit/mitchel_resnick.jpg" alt="picture">
+				<h2>Mitchel Resnick</h2>
+				<p>Add a short exerpt here... <a href="http://flickr.com/photos/ruudvanleeuwen/468309897/">more</a></p>
+			</li>
+
+			<li>
+				<img src="images/mit/rudolf_jaenisch.jpg" alt="picture">
+				<h2>Rudolf Jaenisch</h2>
+				<p>Add a short exerpt here... <a href="http://flickr.com/photos/emikohime/294092478/">more</a></p>
+			</li>
+			<li>
+				<img src="images/mit/sangeeta_bhatia.jpg" alt="picture">
+				<h2>Sangeeta Bhatia</h2>
+				<p>Add a short exerpt here... <a href="http://flickr.com/photos/emikohime/294092478/">more</a></p>
+			</li>
+			
+
+		</ul><!-- end Slider #1 -->
+
+	</div><!-- end wrapper -->
+
+</body>
+
+</html>
