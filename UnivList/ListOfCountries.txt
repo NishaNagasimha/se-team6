@@ -1,0 +1,60 @@
+Australia - 50
+http://univ.cc/search.php?dom=au&key=&start=1
+
+United Kingdom - 169
+http://univ.cc/search.php?dom=uk&key=&start=1
+
+Switzerland - 48
+http://univ.cc/search.php?dom=ch&key=&start=1
+
+Singapore - 6
+http://univ.cc/search.php?dom=sg&key=&start=1
+
+Russia - 315
+http://univ.cc/search.php?dom=ru&key=&start=1
+
+Korea, South - 145
+http://univ.cc/search.php?dom=kr&key=&start=1
+
+Japan - 567
+http://univ.cc/search.php?dom=jp&key=&start=1
+
+India - 350
+http://univ.cc/search.php?dom=in&key=&start=1
+
+Germany - 283
+http://univ.cc/search.php?dom=de&key=&start=1
+
+China - 389
+http://univ.cc/search.php?dom=cn&key=&start=1
+
+United States:
+California - 184
+http://univ.cc/search.php?dom=edu_ca&key=&start=1
+
+Georgia - 57
+http://univ.cc/search.php?dom=edu_ga&key=&start=1
+
+Illinois - 106
+http://univ.cc/search.php?dom=edu_il&key=&start=1
+
+Indiana - 51
+http://univ.cc/search.php?dom=edu_in&key=&start=1
+
+Massachusetts - 78
+http://univ.cc/search.php?dom=edu_ma&key=&start=1
+
+New Jersey - 32
+http://univ.cc/search.php?dom=edu_nj&key=&start=1
+
+New York - 159
+http://univ.cc/search.php?dom=edu_ny&key=&start=1
+
+Pennsylvania - 115
+http://univ.cc/search.php?dom=edu_pa&key=&start=1
+
+Texas - 96
+http://univ.cc/search.php?dom=edu_tx&key=&start=1
+
+Washington - 33
+http://univ.cc/search.php?dom=edu_wa&key=&start=1

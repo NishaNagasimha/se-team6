@@ -1,0 +1,62 @@
+# -*- coding: utf-8 -*-
+from scrapy.contrib.linkextractors import LinkExtractor
+from scrapy.contrib.spiders import Rule, CrawlSpider
+from scrapy.selector import Selector
+from UniversityInfo import items
+
+class DetailsSpider(CrawlSpider):
+	name = "details"
+	allowed_domains = ["usnews.com"]
+	start_urls = (
+		'http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities',
+	)
+
+	rules = (
+		Rule(LinkExtractor(allow="/page\+\d+"),
+			callback='parse_info', follow=True,
+		),
+	)
+
+	def parse_info(self, response):
+		school_info = response.selector.xpath("//div[@class='school-info']")
+		school_image = response.selector.xpath("//div[@class='school-image']")
+		ranks = response.selector.xpath("//span[@class='rankscore-bronze cluetip cluetip-stylized']")
+		#p_desc = response.selector.xpath("//p")
+		univ_details = []
+
+		#for sch_info, sch_img, rank, p in zip(school_info,school_image,ranks,p_desc):
+		for sch_info, sch_img, rank in zip(school_info,school_image,ranks):
+			item = items.UniversityinfoItem()
+			
+			item ["name"] = sch_info.xpath("h2[@class='h h-flush h-cramped']/a[@class='school-name']/text()").extract()
+			item ["link"] = sch_info.xpath("h2[@class='h h-flush h-cramped']/a[@class='school-name']/@href").extract()
+			item ["location"] = sch_info.xpath("p[@class='t t-smaller t-subdued']/text()").extract()
+			
+			item ["image"] = sch_img.xpath("a/img/@src").extract()
+
+			stat = sch_img.xpath("dl[@class='stat']/dd/text()").extract()
+			stat_dt = sch_img.xpath("dl[@class='stat']/dt/text()").extract()
+
+			if stat_dt[0] == "In-state tuition and fees:":
+				item ["tuitionFee"] = "In-state: " + stat[0] + " Out-state: " + stat[1]
+				if stat_dt[2] == "Enrollment:":			 
+					item ["enrollment"] = stat[2]
+					#item ["settings"] = stat[3]
+				else:
+					item ["enrollment"] = ""
+			elif stat_dt[0] == "Tuition and fees:":
+				item ["tuitionFee"] = stat[0]
+				if stat_dt[1] == "Enrollment:":
+					item ["enrollment"] = stat[1]
+					#item ["settings"] = stat[2]
+				else:
+					item ["enrollment"] = ""
+
+			elif stat_dt[0] == "Enrollment:":
+				item ["enrollment"] = stat[0]
+				item ["tuitionFee"] = ""
+
+			item ["rank"] = rank.xpath("./text()").extract()
+			#item ["desc"] = p.xpath("./text()").extract()
+			univ_details.append(item)
+		return univ_details
