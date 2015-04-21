@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5 CV by Martin Ivanov</title>
+    </head>
+    <body>
+        <script src="./HTML5.CV/lib/jQuery/jquery-1.9.1.min.js"></script>
+        <script src="./HTML5.CV/classes/Html5Cv.js"></script>
+        <script>
+        (function() {
+            "use strict";
+            
+            // check HTML5.CV/data/john.smith.json to learn how to use AcidJs.Html5Cv to create your own resume
+            // instantiate AcidJs.Html5Cv
+            window.cv = new AcidJs.Html5Cv({
+                debug: true, // optional, if set to false or removed, console messages will not be displayed
+                dataFile: "./HTML5.CV/data/john.smith.json" // path to the resume data file
+            });
+        })();
+        </script>
+    </body>
+</html>

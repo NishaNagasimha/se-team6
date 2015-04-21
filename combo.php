@@ -184,7 +184,7 @@ ul#css3menu1 li.toplast>a{
     <ul>
       <li ><a href="index.html">Homepage</a></li>
       <li class="active"><a href="college-search.html">College search</a></li>
-      
+      <li><a href="resume.html">Resume Builder</a></li> 
     </ul>
     <div  class="clear"></div>
   </div>

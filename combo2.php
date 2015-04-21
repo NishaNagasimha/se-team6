@@ -7,23 +7,6 @@
   
   <!-- CSS styles for standard search box -->
 <style type="text/css">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   #tfheader{
     background-color:#003366;
     color:white;
@@ -222,62 +205,195 @@ if($row["name"]=="Karolinska Institute")
         echo "country:".$row["country"]."<br/>"."<br/>"."<br/>";
        echo "</font>";
        echo "</font>";
-
-
+    
 
 if($row["name"]=="Harvard University")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+{
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+        echo "<a href='next.php?name=Harvard University'><img src='search.png' height=50px width=50px style='margin:0px 20px;' /></a>";
+        echo "<a href='combo3.php?q=Harvard'><img src='prof.png' height=50px width=50px style='margin:0px 20px;' /></a>";
+        echo "<a href='#'><img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' /></a>";
+
+}
      if($row["name"]=="University of Cambridge")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+ 
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ echo "<a href='next.php?name=University of Cambridge'><img src='search.png' height=50px width=50px style='margin:0px 20px;' /></a>";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+
+}
  if($row["name"]=="Stanford University")
-      echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+  
+     // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+      echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
+
 if($row["name"]=="Princeton University")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+{
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
+ 
     if($row["name"]=="Yale University")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="Massachusetts Institute of Technology (MIT)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<a href='next.php?name=Massachusetts Institute of Technology (MIT)'><img src='search.png' height=50px width=50px style='margin:0px 20px;' /></a>";
+        echo "<a href='combo3.php?q=MIT'><img src='prof.png' height=50px width=50px style='margin:0px 20px;' /></a>";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+
+}
     if($row["name"]=="University of Oxford")
-      echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+{
+    // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="University of California, Berkeley (UCB)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {     // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+
+}
     if($row["name"]=="University of California, Los Angeles (UCLA)")
-      echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+      //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+
+
+}
      if($row["name"]=="Australian National University (ANU)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+ {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
       if($row["name"]=="New York University (NYU)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+        {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="University of California, San Francisco (UCSF)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+       {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
      if($row["name"]=="Johns Hopkins University")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+        {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
 if($row["name"]=="Karolinska Institute")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="Imperial College London")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="UCL (University College London)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="London Business School")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="National University of Singapore (NUS)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";  
+}
     if($row["name"]=="University of Chicago")
-      echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+             {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="London School of Economics and Political Science (LSE)")
-      echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+             {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
      if($row["name"]=="ETH Zurich (Swiss Federal Institute of Technology)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
      if($row["name"]=="California Institute of Technology (Caltech)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+             {
+      // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
     if($row["name"]=="The University of Tokyo")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+             {
+       //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
      if($row["name"]=="Nanyang Technological University (NTU)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+              {
+      // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
       if($row["name"]=="Ecole Polytechnique Federale de Lausanne (EPFL)")
-       echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+             {
+      // echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
+  echo "<img src='search.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='prof.png' height=50px width=50px style='margin:0px 20px;' />";
+        echo "<img src='save_clg.png' height=50px width=60px style='margin:0px 20px;' />";
+}
 
        //echo "<input type='button' value='view'  style='width:100px;height:30px;border-radius:40px;'/>";
-        
+       
         echo "</div>"."<br/>"."<br/>"."<br/>"."<br/>";
       
       
