@@ -1,0 +1,143 @@
+body{
+	 margin:0;
+	 background:lightgray;
+	 height:150vh;
+}
+#notification_button{
+	position:absolute;
+	height:40px;
+	width:40px;
+	top:10px;
+	right:10px;
+	background:gray;
+	cursor:pointer;
+}
+#notification_tab{
+	position:absolute;
+	top:55px;
+	right:10px;
+	width:500px;
+	height:390px;
+	background:rgb(180, 180, 180);
+	display:none;
+}
+.class{
+	overflow:hidden;
+	width:487px;
+	height:105px;
+	white-space:nowrap;
+}
+#see_all_notifications{
+	width:100%;
+	height:50px;
+	background:rgb(62,72,204);
+	cursor:pointer;
+	text-align:center;
+}
+#inner_div{
+	position:relative;
+	height:50px;
+	width:100%;
+	left:0;
+	background:#3e8fcc;
+	display:inline-block;
+}
+#see_all_notifications p{
+	margin-top:15px;
+	left:165px;
+	color:white;
+	font-size:20px;
+}
+#new_notifications{
+	position:absolute;
+	z-index:2;
+	width:500px;
+	height:340px;
+	top:50px;
+	overflow:scroll;
+}
+#all_notifications{
+	position:absolute;
+	z-index:2;
+	width:500px;
+	height:340px;
+	top:50px;
+	display:none;
+	overflow:scroll;
+}
+.notification{
+	position:relative;
+	margin-left:5px;
+	width:490px;
+	height:100px;
+	background:rgb(253,253,253);
+	border-bottom:1px solid #7e7e7e;
+	margin-top:5px;
+	display:inline-block;
+	margin-right:5px;
+	border-radius:4px;
+	
+}
+.notification_from p{
+	line-height:10px;
+	font-family:constantia;
+	font-size:20px;
+	margin-top:10px;
+	margin-left:15px;
+}
+.notification_info p{
+	line-height:10px;
+	font-family:constantia;
+	font-size:20px;
+	margin-left:45px;
+}
+.highlight{
+	color:blue;
+}
+.error_notification{
+	height:100%;
+	width:98%;
+	margin-left:4px;
+	background:white;
+	border-radius:4px;
+}
+.error_notification h1{
+	position:absolute;
+	margin-top:40px;
+	margin-left:10px;
+	font-family:constantia;
+}
+#new_notifications::-webkit-scrollbar {
+	width:7px;
+}
+#new_notifications::-webkit-scrollbar-thumb{
+background-color:#3e48cc;
+border-radius:5px;
+}
+#new_notifications::-webkit-scrollbar-thumb:hover{
+background-color:#076cda;
+}
+#new_notifications::-webkit-scrollbar-thumb:active{
+background-color:#076cda;
+border:1px solid rgb(200,200,200);
+} 
+#all_notifications::-webkit-scrollbar {
+	width:7px;
+}
+#all_notifications::-webkit-scrollbar-thumb{
+background-color:#3e48cc;
+border-radius:5px;
+}
+#all_notifications::-webkit-scrollbar-thumb:hover{
+background-color:#076cda;
+}
+#all_notifications::-webkit-scrollbar-thumb:active{
+background-color:#076cda;
+border:1px solid rgb(200,200,200);
+} 
+#inner_div:hover {
+	width:97%;
+	height:45px;
+	margin-top:2.5px;
+	border-radius:5px;
+}
